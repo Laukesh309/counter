@@ -1,4 +1,4 @@
-import {observable,action,computed} from "mobx-react"
+import {observable,action,computed} from "mobx"
 
 class BirdStore
 {
