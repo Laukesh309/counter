@@ -5,15 +5,17 @@ import {inject,observer} from "mobx-react"
 @observer
 class counter extends Component
 {
-    increament=()=>
+    increament=(event,index)=>
     {
+        console.log("event",event,index)
         let {BirdStore}=this.props
-        BirdStore.store++
+          BirdStore.store[index]=BirdStore.store[index]+1
     }
-    decreament =()=>
+    decreament =(event,index)=>
     {
+        console.log("index",index)
         let {BirdStore}=this.props
-        BirdStore.store--
+       BirdStore.store[index]--
     }
     render()
     {
@@ -21,12 +23,26 @@ class counter extends Component
         console.log("this is props",BirdStore)
         return(
             <div>  
-                <h1>{BirdStore.storeCount}</h1>
-                <button onClick={()=>
+            {
+                BirdStore.storeCount.map((current,index)=>
                 {
-                    this.increament()
-                }}>increament</button>
-                <button onClick={this.decreament}>decreament</button>
+                   return (
+                       <React.Fragment>
+                       <h1>{current}</h1>
+                    <button onClick={(evnet)=>
+                        {
+                           // console.log("eventdrive",event.target.id)
+                            this.increament(evnet,index)
+                        }}>increament</button>
+                     <button onClick={(event)=>
+                     {
+                         this.decreament(event,index)
+                    }}>decreament</button>
+                     </React.Fragment>)
+         
+                })
+             
+            }
             </div>
         )
     }

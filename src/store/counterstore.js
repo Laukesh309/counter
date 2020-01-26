@@ -2,10 +2,15 @@ import {observable,action,computed} from "mobx"
 
 class BirdStore
 {
-    @observable store=0;
+    @observable store=[]
+    @action addStore = ()=>
+    {
+          let counter=0
+        this.store.push(counter)
+    }
     @action count =()=>
     {
-       this.store++
+      
     }
     @computed get storeCount()
     {
