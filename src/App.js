@@ -19,7 +19,9 @@ class App extends Component{
       BirdStore.addStore()
      
     }}>addcounter</button>
-    <button>deletecounter</button>
+    <button onClick={()=>{
+           BirdStore.deleteStore()
+    }}>deletecounter</button>
     <Counter></Counter>
     </div>
   );

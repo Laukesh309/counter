@@ -17,6 +17,11 @@ class counter extends Component
         let {BirdStore}=this.props
        BirdStore.store[index]--
     }
+    deleteSingleElement=(event,index)=>
+    {
+        let {BirdStore}=this.props
+        BirdStore. deleteSingleStore(index)
+    }
     render()
     {
         const {BirdStore}=this.props
@@ -39,6 +44,9 @@ class counter extends Component
                      {
                          this.decreament(event,index)
                     }}>decreament</button>
+                    <button onClick={(event)=>
+                    this.deleteSingleElement(event,index)
+                    }>delete</button>
                      </React.Fragment>)
          
                 })
