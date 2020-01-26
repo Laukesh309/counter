@@ -1,0 +1,40 @@
+.heading
+{
+
+    font-size: large;
+    background: yellowgreen;
+    width: 78px;
+    text-align: center;
+}
+.increament
+{
+    background: cyan;
+    border: navajowhite;
+    font-family: initial;
+    font-size: 18px;
+    height: 37px;
+}
+.decreament
+{
+    background: springgreen;
+    border: none;
+    width: 18%;
+    height: 37px;
+    font-size: large;
+    font-family: initial
+}
+.delete
+{
+    background-color: tomato;
+    color: aliceblue;
+    font-size: 18px;
+    border: none;
+    height: 37px;
+    font-family: cursive;
+    width: 94px;
+}
+.App
+{
+
+background: slategrey;
+}

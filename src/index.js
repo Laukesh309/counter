@@ -4,7 +4,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {Provider} from "mobx-react"
 import BirdStore from "./store/counterstore"
-
+import  AppCss from  "./App.css"
 const root = (
     <Provider BirdStore={BirdStore}>
         <App></App>

@@ -34,19 +34,19 @@ class counter extends Component
                     console.log("array",array)
                    return (
                        <React.Fragment>
-                       <h1>{current}</h1>
+                       <h1 className="heading">{current}</h1>
                     <button onClick={(evnet)=>
                         {
                            // console.log("eventdrive",event.target.id)
                             this.increament(evnet,index)
-                        }}>increament</button>
+                        }} className="increament">increament</button>
                      <button onClick={(event)=>
                      {
                          this.decreament(event,index)
-                    }}>decreament</button>
+                    }} className="decreament">decreament</button>
                     <button onClick={(event)=>
                     this.deleteSingleElement(event,index)
-                    }>delete</button>
+                    } className="delete">delete</button>
                      </React.Fragment>)
          
                 })
