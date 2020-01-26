@@ -24,8 +24,9 @@ class counter extends Component
         return(
             <div>  
             {
-                BirdStore.storeCount.map((current,index)=>
+                BirdStore.storeCount.map((current,index,array)=>
                 {
+                    console.log("array",array)
                    return (
                        <React.Fragment>
                        <h1>{current}</h1>

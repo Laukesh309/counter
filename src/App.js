@@ -11,7 +11,7 @@ class App extends Component{
  render()
  {
    let {BirdStore}=this.props
-   console.log("this is birstore",BirdStore.addStore())
+   //console.log("this is birstore",BirdStore.addStore())
   return (
     <div className="App">
     <button onClick={()=>
