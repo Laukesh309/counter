@@ -35,6 +35,16 @@
 }
 .App
 {
-
+height: 100vh;
 background: slategrey;
+}
+button
+{
+    background-color: thistle;
+    height: 36px;
+    font-size: 21px;
+    border: none;
+    color: unset;
+    font-family: serif;
+    margin-right: 3px;
 }
